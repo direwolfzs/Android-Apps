@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id= "@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.texttospeech.MainActivity" 
+    tools:ignore = "MergeRootFrame" >
+    
+
+    
+    
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    </TableRow>
+
+    <EditText
+        android:id="@+id/enterText"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        >
+
+        <requestFocus />
+    </EditText>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+  
+
+    <Button
+        android:id="@+id/speechButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick = "speak"
+        android:text="SpeakText" 
+  
+        />
+  </TableRow>
+</LinearLayout>

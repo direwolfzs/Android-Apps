@@ -1,0 +1,86 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.soundsapp.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/bugs"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:onClick="buttonBugsClick"
+            android:src="@drawable/bugs" />
+
+        <ImageButton
+            android:id="@+id/daffey"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:onClick="buttonDaffeyClick"
+            android:src="@drawable/daffey" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/marvin"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:onClick="buttonMarvinClick"
+            android:src="@drawable/marvin" />
+
+        <ImageButton
+            android:id="@+id/spike"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:onClick="buttonSpikeClick"
+            android:src="@drawable/spike" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <ImageButton
+            android:id="@+id/taz"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:onClick="buttonTazClick"
+            android:src="@drawable/taz" />
+
+        <ImageButton
+            android:id="@+id/tweety"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:onClick="buttonTweetyClick"
+            android:src="@drawable/tweety" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="128.0dp"
+            android:layout_height="wrap_content"
+            android:onClick="stopAllSounds"
+            android:text="Stop Sounds" />
+    </TableRow>
+
+</TableLayout>

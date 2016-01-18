@@ -1,0 +1,105 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.pedometer.Pedometer"
+    tools:ignore="MergeRootFrame" >
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/textViewX"
+            android:layout_weight="0.33"
+            android:layout_height="wrap_content"
+            android:gravity = "center"
+            android:text = "X"
+            />
+
+        <EditText
+            android:id="@+id/textViewY"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.33"
+            android:ems="10"
+            android:text="Y" />
+
+        <EditText
+            android:id="@+id/textViewZ"
+            android:layout_weight="0.33"
+            android:layout_height="wrap_content"
+            android:text = "Z"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/buttonReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_span = "4"
+            android:onClick = "resetSteps"
+            android:text="Rest Steps" />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/textSteps"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_span= "4"
+            android:gravity = "center_vertical|center_horizontal"
+            android:text = "---"
+            android:textSize = "40dp" >
+
+            <requestFocus />
+        </EditText>
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:max = "20"
+            android:layout_span= "4"
+            />
+
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/textSensitive"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:layout_span = "4"
+            android:gravity = "center_vertical|center_horizontal"
+            android:text = "---"
+            android:textSize= "20dp" />
+
+    </TableRow>
+
+</LinearLayout>
